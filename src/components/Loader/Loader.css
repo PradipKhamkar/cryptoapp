@@ -1,0 +1,26 @@
+.loader__container {
+  height: 100vh;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading__wrapper {
+  width: fit-content;
+  padding: 3rem;
+  text-align: center;
+  color: var(--title-color) !important;
+  font-size: 1.2rem;
+}
+.loader__icon svg {
+  color: orange;
+  font-size: 2rem;
+  animation: loader 7s linear infinite;
+  transition: all 2s linear;
+}
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}

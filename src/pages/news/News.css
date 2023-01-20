@@ -1,0 +1,31 @@
+.currencies__container {
+  margin-top: 8rem;
+}
+
+.currencies__cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.5rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.search__crypto {
+  margin: auto;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.search__coin {
+  padding: 0.5rem;
+  width: 17rem;
+  border: 0.5px solid #bbb;
+  outline: none;
+  background-color: var(--coin-cart-bg);
+  color: var(--title-color);
+  border-radius: 0.2rem;
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}

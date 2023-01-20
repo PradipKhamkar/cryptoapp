@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--first-color);
+  height: 100px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+.footer__app__name {
+  color: #fff !important;
+}
+.footer__wrapper {
+  color: #fff !important;
+}
