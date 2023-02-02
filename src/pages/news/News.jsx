@@ -24,7 +24,7 @@ const News = () => {
           </div>
         </>
       ) : (
-        <Error />
+        <Error errorName="Failed To Get News..!!" />
       )}
     </div>
   );
