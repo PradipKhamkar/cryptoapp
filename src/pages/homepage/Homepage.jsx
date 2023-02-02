@@ -112,7 +112,11 @@ const Homepage = () => {
                   </h4>
                 </div>
                 <div className="home__currencies">
-                  <NewsCart newsData={news} />
+                  {news ? (
+                    <NewsCart newsData={news} />
+                  ) : (
+                    <h1 className="newsError">Sorry Filed To Load News..!!</h1>
+                  )}
                 </div>
               </div>
               {/*  */}
