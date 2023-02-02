@@ -50,3 +50,12 @@
 .show__more a {
   color: var(--title-color) !important;
 }
+
+.newsError {
+  text-align: center;
+  font-size: 1rem !important;
+  margin-bottom: 3rem;
+  background-color: tomato;
+  color: white !important;
+  padding: 0.5rem;
+}
