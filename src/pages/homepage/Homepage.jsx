@@ -17,6 +17,7 @@ import {
   MdVerifiedUser,
   MdVerified,
   MdOutlineAccessTimeFilled,
+  MdError,
 } from "react-icons/md";
 import { VscError } from "react-icons/vsc";
 import { GiTwoCoins } from "react-icons/gi";
@@ -41,15 +42,16 @@ const Homepage = () => {
 
   if (status === "loading" || newsStatus === "loading")
     return <Loader loadingName={"Loading Home"} />;
-
   return (
     <div className="home__section">
       <h2 className="home__title">Global Crypto Stats</h2>
       {error && newsError ? (
-        error
+        <>
+          <Error errorName={"Somethings Went's Wrong..!!"} />
+        </>
       ) : (
         <>
-          {status == "success" && newsStatus == "success" ? (
+          {status == "success" || newsStatus == "success" ? (
             <>
               <div className="global__crypto__stats container">
                 <div className="global__crypto__cart">
@@ -116,7 +118,9 @@ const Homepage = () => {
               {/*  */}
             </>
           ) : (
-            <Error />
+            <>
+              <Error errorName="Somethings Went's Wrong..!!" />
+            </>
           )}
         </>
       )}
